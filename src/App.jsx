@@ -7,6 +7,8 @@ import Modal from './components/modal.jsx'
 
 function App() {
   const [showModal, setShowModal] = useState(false)
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     async function getAPODData() {
@@ -14,8 +16,9 @@ function App() {
       const apiURL = 'https://api.nasa.gov/planetary/apod' + `?api_key=${APOD_KEY}`
       try {
         const response = await fetch(apiURL)
-        const data = await response.json()
-        console.log("Success", data)
+        const NASAdata = await response.json()
+        setData(NASAdata)
+        // console.log("Success", NASAdata)
       } catch (error) {
         console.log("Unable to get APOD", error.message)
       }
@@ -28,7 +31,7 @@ function App() {
   }
   return (
     <>
-      <Main></Main>
+      {data ? (<Main ></Main>) : (<div className="loadingState"><i className="fa-solid fa-spinner"></i></div>)}
       {showModal && (<Modal toggleModal={toggleModal} />)}
       <Footer toggleModal={toggleModal}></Footer>
     </>
