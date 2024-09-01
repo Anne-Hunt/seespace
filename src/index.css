@@ -1,5 +1,5 @@
 :root {
-  font-family: Suse, system-ui, Oswald, Helvetica, Arial, sans-serif;
+  font-family: Suse, Oswald, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -89,7 +89,7 @@ footer button:hover {
   background: linear-gradient(to top, #030615, rgba(255, 255, 255, 0));
 }
 
-.sidebar {
+.modal {
   position: fixed;
   inset: 0;
   display: flex;
@@ -116,7 +116,7 @@ footer button:hover {
   width: 80%;
   max-width: 800px;
   margin-left: auto;
-  background: #030615;
+  background: rgb(3, 6, 21);
 }
 
 .modalContents h2 {
@@ -179,7 +179,7 @@ footer button:hover {
 
 
 @media (min-width: 640px) {
-  .sidebar {
+  .modal {
     position: relative;
     inset: unset;
     min-width: 30%;

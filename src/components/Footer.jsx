@@ -8,17 +8,16 @@ export default function Footer() {
 
             </div>
             <div>
-                <h2>
-                    APOD Image Name
-                </h2>
                 <h1>
                     APOD Image credits
                 </h1>
+                <h2>
+                    APOD Image Name
+                </h2>
             </div>
-            <div>
-
+            <button>
                 <i className="fa-solid fa-circle-question"></i>
-            </div>
+            </button>
         </footer>
     )
 }
