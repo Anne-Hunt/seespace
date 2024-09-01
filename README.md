@@ -1,8 +1,5 @@
-# React + Vite
+# APOD Project for React, Vite, and NASA APOD API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application uses the free NASA APOD API, React.js, and Vite to create a website that displays the daily content of NASA's Picture Of The Day program. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Future versions will include a date selector, better alignment of HD images, and a local storage option that will take some of the stresses off the API for repeated calls and allow users to see their last cached image when offline. The modal will also be less disruptive to the overall layout.
