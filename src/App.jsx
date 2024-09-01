@@ -14,9 +14,18 @@ function App() {
     async function getAPODData() {
       const APOD_KEY = import.meta.env.VITE_API_KEY
       const apiURL = 'https://api.nasa.gov/planetary/apod' + `?api_key=${APOD_KEY}`
+      const ahora = (new Date()).toDateString()
+      const localDate = `NASA-${ahora}`
+      if (localStorage.getItem(localDate)) {
+        const localData = JSON.parse(localStorage.getItem(localDate))
+        setData(localData)
+        return
+      }
+      localStorage.clear()
       try {
         const response = await fetch(apiURL)
         const NASAdata = await response.json()
+        localStorage.setItem(localDate, JSON.stringify(NASAdata))
         setData(NASAdata)
         // console.log("Success", NASAdata)
       } catch (error) {
