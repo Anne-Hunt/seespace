@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Footer(props) {
-    const { showModal, toggleModal } = props
+    const { showModal, toggleModal, data } = props
     return (
         <footer>
             <div className='bgGradient'>
@@ -9,10 +9,10 @@ export default function Footer(props) {
             </div>
             <div>
                 <h1>
-                    APOD Image credits
+                    {data?.title}
                 </h1>
                 <h2>
-                    APOD Image Name
+                    APOD
                 </h2>
             </div>
             <button onClick={toggleModal}>

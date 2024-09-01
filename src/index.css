@@ -56,11 +56,11 @@ footer div {
   flex-direction: column;
 }
 
-footer h2 {
+footer h1 {
   font-size: 1.4rem;
 }
 
-footer h1 {
+footer h2 {
   font-size: 0.9rem;
   font-weight: 200;
 }
@@ -146,6 +146,7 @@ footer button:hover {
 
 .descriptionContainer {
   display: flex;
+  text-align: start;
   flex-direction: column;
   gap: 0.5rem;
 }

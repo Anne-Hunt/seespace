@@ -31,9 +31,9 @@ function App() {
   }
   return (
     <>
-      {data ? (<Main ></Main>) : (<div className="loadingState"><i className="fa-solid fa-spinner"></i></div>)}
-      {showModal && (<Modal toggleModal={toggleModal} />)}
-      <Footer toggleModal={toggleModal}></Footer>
+      {data ? (<Main data={data} />) : (<div className="loadingState"><i className="fa-solid fa-spinner"></i></div>)}
+      {showModal && (<Modal toggleModal={toggleModal} data={data} />)}
+      {data && (<Footer toggleModal={toggleModal} data={data}></Footer>)}
     </>
   )
 }
