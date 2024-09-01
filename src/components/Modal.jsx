@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Modal() {
-
+export default function Modal(props) {
+    const { toggleModal } = props
 
     return (
         <div className="modal">
@@ -14,7 +14,7 @@ export default function Modal() {
                     <p className="descriptionTitle">APOD Image desciption</p>
                     <p>more about this beauty</p>
                 </div>
-                <button>
+                <button onClick={toggleModal}>
                     <i className="fa-solid fa-circle-xmark"></i>
                 </button>
             </div>

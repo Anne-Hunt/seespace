@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Footer() {
-
+export default function Footer(props) {
+    const { showModal, toggleModal } = props
     return (
         <footer>
             <div className='bgGradient'>
@@ -15,7 +15,7 @@ export default function Footer() {
                     APOD Image Name
                 </h2>
             </div>
-            <button>
+            <button onClick={toggleModal}>
                 <i className="fa-solid fa-circle-question"></i>
             </button>
         </footer>
