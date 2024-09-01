@@ -14,7 +14,11 @@ export default function Modal() {
                 <div>
                     <p>APOD Image desciption</p>
                     <p>more about this beauty</p>
-                    <i className="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div>
+                    <button>
+                        <i className="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </div>
             </div>
         </div>
