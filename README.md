@@ -1,5 +1,37 @@
-# APOD Project for React, Vite, and NASA APOD API
+# APOD
 
-This application uses the free NASA APOD API, React.js, and Vite to create a website that displays the daily content of NASA's Picture Of The Day program. 
+created by Anne Hunt
 
-Future versions will include a date selector, better alignment of HD images, and the modal will also be less disruptive to the overall layout.
+Live Link: Not yet available
+
+Completed 2024
+
+## DESCRIPTION
+
+APOD is a common project used to learn new frameworks. This version uses React, the NASA APOD API, Javascript, HTML/CSS, and local storage.
+
+## SKILLS
+
+Javascript, HTML, CSS, API access, React, local storage, Vite
+
+## LANGUAGES
+
+Javascript, HTML, CSS
+
+## REQUIREMENTS
+
+Application must:
+
+- Allow users to access the daily image of space from NASA
+- Save cache to local storage to reduce the number of network requests
+
+## STRETCH GOALS
+
+Application may:
+
+- Allow for searching of APOD by date
+- Provide alternative options for color schemes
+
+## FIGMA/UML
+
+Not currently available
